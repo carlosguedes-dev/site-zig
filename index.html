@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zig Presidente — A campanha presidencial canina mais séria do Brasil. Conheça os projetos e propostas do candidato mais leal do país.">
+  <title>Zig Presidente — O Brasil Precisa de Mais Focinho</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+</head>
+<body>
+
+  <!-- Grain Overlay -->
+  <div class="grain-overlay"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" id="logo">
+        <div class="logo-icon">🐾</div>
+        <div>
+          <span class="logo-text">Zig Presidente</span>
+          <span class="logo-tag">Campanha 2026</span>
+        </div>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link active" id="nav-home">Home</a>
+        <a href="projetos.html" class="nav-link" id="nav-projetos">Projetos</a>
+        <a href="sobre.html" class="nav-link" id="nav-sobre">Sobre Mim</a>
+        <a href="contato.html" class="nav-link" id="nav-contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================
+       HERO SECTION
+       ======================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Candidato Oficial 2026
+      </div>
+      <h1 class="hero-title">
+        O Brasil precisa de mais
+        <span class="hero-title-gold">Focinho.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Chega de promessas. Chega de mentiras. O único candidato que nunca vai
+        te trair é o que abana o rabo quando você chega em casa.
+        <strong>Zig Presidente.</strong>
+      </p>
+      <div class="hero-actions">
+        <a href="projetos.html" class="btn btn-primary" id="btn-projetos">
+          Conheça os Projetos
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="sobre.html" class="btn btn-outline" id="btn-sobre">
+          Sobre o Candidato
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span class="scroll-indicator-text">Scroll</span>
+      <div class="scroll-indicator-line"></div>
+    </div>
+  </section>
+
+  <!-- ========================
+       NÚMEROS DA CAMPANHA
+       ======================== -->
+  <section class="section" id="numbers" style="padding-bottom: 0;">
+    <div class="section-inner">
+      <div class="feature-strip reveal">
+        <div class="feature-item">
+          <span class="feature-icon">🗳️</span>
+          <div class="feature-value">87%</div>
+          <div class="feature-label">Índice de aprovação (entre cães)</div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📢</span>
+          <div class="feature-value">5</div>
+          <div class="feature-label">Projetos de lei propostos</div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🐾</span>
+          <div class="feature-value">0</div>
+          <div class="feature-label">Ossos escondidos (auditado)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       PROJETOS DA CAMPANHA
+       ======================== -->
+  <section class="section" id="projects-preview">
+    <div class="section-inner">
+      <div class="reveal">
+        <span class="section-label">Propostas de Governo</span>
+        <h2 class="section-title">Projetos da Campanha</h2>
+        <p class="section-desc">
+          Propostas reais para problemas reais. Enquanto outros candidatos prometem
+          o impossível, Zig promete o que todo cachorro sabe fazer: lealdade,
+          proteção e latidos certeiros.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Card 1 -->
+        <a href="projetos.html#projeto-lava-pata" class="project-card reveal reveal-delay-1" id="card-lava-pata">
+          <div class="project-card-image">
+            <img src="img/operacao-lava-pata.png" alt="Operação Lava-Pata" loading="lazy">
+            <span class="project-card-tag">Fiscalização</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Operação Lava-Pata</h3>
+            <p class="project-card-desc">
+              Combate implacável ao desvio de ração pública. Nenhum saco de ração
+              premium será desviado para gatos infiltrados.
+            </p>
+            <div class="project-card-footer">
+              <span class="project-card-link">
+                Saiba mais <span class="project-card-link-arrow">→</span>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="projetos.html#projeto-bolsa-petisco" class="project-card reveal reveal-delay-2" id="card-bolsa-petisco">
+          <div class="project-card-image">
+            <img src="img/bolsa-petisco-premium.png" alt="Bolsa Petisco Premium" loading="lazy">
+            <span class="project-card-tag">Social</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Bolsa Petisco Premium</h3>
+            <p class="project-card-desc">
+              Redistribuição de renda canina. Todo cachorro merece um petisco
+              de qualidade, não apenas os de raça.
+            </p>
+            <div class="project-card-footer">
+              <span class="project-card-link">
+                Saiba mais <span class="project-card-link-arrow">→</span>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="projetos.html#projeto-pec-focinho" class="project-card reveal reveal-delay-3" id="card-pec-focinho">
+          <div class="project-card-image">
+            <img src="img/pec-focinho-livre.png" alt="PEC do Focinho Livre" loading="lazy">
+            <span class="project-card-tag">Legislação</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">PEC do Focinho Livre</h3>
+            <p class="project-card-desc">
+              Legalização da quebra de lixeiras. Liberdade de expressão para
+              focinhos curiosos em todo o território nacional.
+            </p>
+            <div class="project-card-footer">
+              <span class="project-card-link">
+                Saiba mais <span class="project-card-link-arrow">→</span>
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="section-cta reveal reveal-delay-4">
+        <a href="projetos.html" class="btn btn-outline" id="btn-all-projects">
+          Ver Todos os Projetos
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ========================
+       MANIFESTO
+       ======================== -->
+  <section class="manifesto-section" id="manifesto">
+    <div class="section-inner" style="text-align: center;">
+      <div class="reveal">
+        <span class="section-label" style="justify-content: center;">
+          Manifesto
+        </span>
+        <blockquote class="manifesto-quote">
+          Enquanto outros prometem, eu
+          <span class="hero-title-gold">protejo.</span>
+        </blockquote>
+        <p class="section-desc" style="max-width: 660px; margin-left: auto; margin-right: auto; margin-bottom: 0;">
+          A política precisa de menos latidos vazios e mais ação. Precisa de alguém
+          que dorme com um olho aberto vigiando o povo. Alguém que fareja corrupção
+          a quilômetros de distância. Alguém que, ao contrário dos outros, nunca
+          vai esconder o osso.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       CALL TO ACTION FINAL
+       ======================== -->
+  <section class="section" id="cta-final" style="padding-top: var(--space-3xl);">
+    <div class="section-inner">
+      <div class="cta-block reveal">
+        <div class="cta-block-inner">
+          <span class="section-label" style="justify-content: center;">Faça Parte</span>
+          <h2 class="cta-block-title">Junte-se à campanha<br>mais honesta do Brasil.</h2>
+          <p class="cta-block-desc">
+            Siga o Zig no Instagram e acompanhe cada latido, cada proposta e cada
+            mordida na corrupção em tempo real.
+          </p>
+          <div class="cta-block-actions">
+            <a href="https://www.instagram.com/zig_o_cachorro" target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary" id="btn-ig-cta">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+              </svg>
+              @zig_o_cachorro
+            </a>
+            <a href="contato.html" class="btn btn-outline" id="btn-contact-cta">
+              Entrar em Contato
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <a href="https://www.instagram.com/zig_o_cachorro" target="_blank" rel="noopener noreferrer"
+         class="footer-instagram" id="footer-ig-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+          <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+          <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+        </svg>
+        @zig_o_cachorro
+      </a>
+      <p class="footer-disclaimer">
+        Este site tem fins puramente de comédia e é um projeto de estudo sobre
+        programação desenvolvido por <strong>Carlos Guedes</strong>.
+      </p>
+      <p class="footer-copyright">
+        © 2026 Zig Presidente — Todos os direitos reservados (inclusive o de roer chinelos).
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+  <style>
+    /* === section-cta centralizado === */
+    .section-cta {
+      text-align: center;
+      margin-top: var(--space-3xl);
+    }
+
+    /* === CTA Block === */
+    .cta-block {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--glass-border);
+      background:
+        var(--noise-url),
+        linear-gradient(145deg, rgba(26, 92, 42, 0.22), rgba(7, 18, 10, 0.92));
+      background-size: 300px 300px, cover;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .cta-block-inner {
+      padding: var(--space-4xl) var(--space-3xl);
+      text-align: center;
+      position: relative;
+    }
+
+    /* Borda dourada animada no topo */
+    .cta-block-inner::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 10%; right: 10%;
+      height: 2px;
+      background: var(--gradient-gold);
+      border-radius: var(--radius-full);
+      opacity: 0.7;
+    }
+
+    .cta-block-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin: var(--space-md) 0 var(--space-lg);
+    }
+
+    .cta-block-desc {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      max-width: 480px;
+      margin: 0 auto var(--space-2xl);
+      line-height: 1.8;
+    }
+
+    .cta-block-actions {
+      display: flex;
+      gap: var(--space-md);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 480px) {
+      .cta-block-inner { padding: var(--space-2xl) var(--space-lg); }
+      .cta-block-actions .btn { width: 100%; justify-content: center; }
+    }
+  </style>
+</body>
+</html>

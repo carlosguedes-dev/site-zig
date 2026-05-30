@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a campanha de Zig Presidente 2026. Envie sua mensagem, denúncia de gato ou proposta de aliança canina.">
+  <title>Contato — Zig Presidente 2026</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+</head>
+<body>
+
+  <div class="grain-overlay"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" id="logo">
+        <div class="logo-icon">🐾</div>
+        <div>
+          <span class="logo-text">Zig Presidente</span>
+          <span class="logo-tag">Campanha 2026</span>
+        </div>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html"    class="nav-link"        id="nav-home">Home</a>
+        <a href="projetos.html" class="nav-link"        id="nav-projetos">Projetos</a>
+        <a href="sobre.html"    class="nav-link"        id="nav-sobre">Sobre Mim</a>
+        <a href="contato.html"  class="nav-link active" id="nav-contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" id="page-hero">
+    <h1 class="page-hero-title reveal">
+      Fale com a <span class="hero-title-gold">Campanha</span>
+    </h1>
+    <p class="page-hero-desc reveal reveal-delay-1">
+      Envie sua mensagem, denúncia de gato infiltrado ou proposta de aliança.
+      Zig lê tudo — quando não está dormindo.
+    </p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ========================
+       CONTACT SECTION
+       ======================== -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <div class="contact-grid">
+
+        <!-- Formulário -->
+        <div class="reveal">
+          <span class="section-label">Mensagem</span>
+          <h2 class="section-title" style="margin-bottom: var(--space-xl);">
+            Envie seu <span class="hero-title-gold">Au-Au</span>
+          </h2>
+
+          <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="form-name">Nome completo</label>
+                <input type="text" class="form-input" id="form-name" name="name"
+                  placeholder="Seu nome (ou do seu dono)" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="form-email">E-mail</label>
+                <input type="email" class="form-input" id="form-email" name="email"
+                  placeholder="seu@email.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-subject">Assunto</label>
+              <select class="form-input" id="form-subject" name="subject" required>
+                <option value="" disabled selected>Selecione o motivo do contato</option>
+                <option value="apoio">Quero apoiar a campanha</option>
+                <option value="denuncia">Denúncia de gato suspeito</option>
+                <option value="petisco">Doação de petiscos</option>
+                <option value="midia">Assessoria de mídia</option>
+                <option value="alianca">Proposta de aliança canina</option>
+                <option value="outro">Outro (latido genérico)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-message">Mensagem</label>
+              <textarea class="form-textarea" id="form-message" name="message"
+                placeholder="Escreva sua mensagem aqui. Aceita-se latidos, uivos e rosnados educados."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="btn-submit">
+              Enviar Mensagem
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none">
+                <path d="M2 8H14M14 8L9 3M14 8L9 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </form>
+
+          <!-- Sucesso -->
+          <div class="form-success" id="form-success" style="display:none;">
+            <div class="form-success-icon">🐾</div>
+            <h3 class="form-success-title">Au-Au Recebido!</h3>
+            <p class="form-success-desc">
+              Sua mensagem foi recebida com sucesso. Zig responderá assim que
+              acordar da soneca das 15h.
+            </p>
+          </div>
+        </div>
+
+        <!-- Informações de contato -->
+        <div class="reveal reveal-delay-2">
+          <span class="section-label">Informações</span>
+          <h2 class="section-title" style="margin-bottom: var(--space-xl);">
+            Canais <span class="hero-title-gold">Oficiais</span>
+          </h2>
+
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <div class="contact-info-label">QG da Campanha</div>
+                <div class="contact-info-value">
+                  Rua dos Latidos, 42 — Casa do Dono<br>
+                  Bairro Focinho Feliz, Brasil
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📱</div>
+              <div>
+                <div class="contact-info-label">Instagram Oficial</div>
+                <div class="contact-info-value">
+                  <a href="https://www.instagram.com/zig_o_cachorro" target="_blank" rel="noopener noreferrer">
+                    @zig_o_cachorro
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">✉️</div>
+              <div>
+                <div class="contact-info-label">E-mail da Campanha</div>
+                <div class="contact-info-value">
+                  <a href="mailto:contato@zigpresidente.com.br">
+                    contato@zigpresidente.com.br
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🕐</div>
+              <div>
+                <div class="contact-info-label">Horário de Funcionamento</div>
+                <div class="contact-info-value">
+                  Seg a Sex: 8h às 18h<br>
+                  <span style="color: var(--text-tertiary); font-size: 0.85rem;">
+                    (exceto horário de passeio: 7h, 12h e 17h)
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">⚠️</div>
+              <div>
+                <div class="contact-info-label">Canal de Denúncias</div>
+                <div class="contact-info-value">
+                  Disque-Gato: 0800-MIAU-NÃO<br>
+                  <span style="color: var(--text-tertiary); font-size: 0.85rem;">
+                    (denúncias anônimas de atividade felina suspeita)
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social card -->
+          <div class="contact-social-card">
+            <div class="contact-social-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-social-label">Acompanhe a campanha</div>
+              <a href="https://www.instagram.com/zig_o_cachorro" target="_blank" rel="noopener noreferrer"
+                 class="contact-social-handle">@zig_o_cachorro</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <a href="https://www.instagram.com/zig_o_cachorro" target="_blank" rel="noopener noreferrer"
+         class="footer-instagram" id="footer-ig-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+          <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+          <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+        </svg>
+        @zig_o_cachorro
+      </a>
+      <p class="footer-disclaimer">
+        Este site tem fins puramente de comédia e é um projeto de estudo sobre
+        programação desenvolvido por <strong>Carlos Guedes</strong>.
+      </p>
+      <p class="footer-copyright">
+        © 2026 Zig Presidente — Todos os direitos reservados (inclusive o de roer chinelos).
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      const form    = document.getElementById('contact-form');
+      const success = document.getElementById('form-success');
+      const btn     = document.getElementById('btn-submit');
+
+      btn.textContent = 'Enviando...';
+      btn.disabled    = true;
+
+      setTimeout(() => {
+        form.style.display    = 'none';
+        success.style.display = 'block';
+        success.style.animation = 'fadeInUp 0.6s var(--ease-expo)';
+      }, 1200);
+    }
+  </script>
+
+  <style>
+    /* === Contact social card === */
+    .contact-social-card {
+      display: flex;
+      align-items: center;
+      gap: var(--space-lg);
+      padding: var(--space-lg) var(--space-xl);
+      margin-top: var(--space-2xl);
+      background: rgba(26, 92, 42, 0.12);
+      border: 1px solid rgba(200,160,16,0.18);
+      border-radius: var(--radius-md);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      transition: border-color var(--transition-fast);
+    }
+    .contact-social-card:hover { border-color: rgba(200,160,16,0.35); }
+
+    .contact-social-icon {
+      width: 50px; height: 50px;
+      border-radius: var(--radius-sm);
+      background: rgba(200,160,16,0.10);
+      border: 1px solid var(--glass-border);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--br-gold-mid); flex-shrink: 0;
+    }
+
+    .contact-social-label {
+      font-size: 0.72rem; color: var(--text-tertiary);
+      text-transform: uppercase; letter-spacing: 0.10em; margin-bottom: 4px;
+    }
+
+    .contact-social-handle {
+      font-size: 1.1rem; font-weight: 600;
+      color: var(--br-gold-light);
+      transition: color var(--transition-fast);
+    }
+    .contact-social-handle:hover { color: var(--br-gold-glow); }
+
+    @media (max-width: 480px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</body>
+</html>
