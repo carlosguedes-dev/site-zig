@@ -7,7 +7,7 @@ Bem-vindo ao repositório da campanha presidencial canina mais séria do Brasil.
 
 O design simula o rigor e a estética de uma campanha eleitoral de alto nível, utilizando um esquema de cores escuro, cinematográfico, inspirado sutilmente na bandeira do Brasil (verde floresta, ouro oliva, azul marinho), com aplicação de *grain/noise* para textura fotográfica.
 
-🔗 **Acesse a campanha:** [carlosguedes.github.io/site-zig](https://carlosguedes.github.io/site-zig/) *(Ajuste o link após o deploy)*
+🔗 **Acesse a campanha:** [carlosguedes-dev.github.io/site-zig](https://carlosguedes-dev.github.io/site-zig/) *(Ajuste o link após o deploy)*
 
 ---
 
